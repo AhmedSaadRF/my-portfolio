@@ -10,7 +10,7 @@ export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
 
-      <div className="absolute inset-0 [mask-image:linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)]">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainimg.src})` }}></div>
         <div className="size-[620px] hero-ring"></div>
         <div className="size-[820px] hero-ring"></div>
