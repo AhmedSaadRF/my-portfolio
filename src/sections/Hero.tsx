@@ -1,16 +1,17 @@
-import memoimg from "@/assets/images/memoji-computer.png";
-import ArrowDown from "@/assets/icons/arrow-down.svg";
+import myImg from "@/assets/images/1704637099130.jpg";
+import GitHubImg from "@/assets/images/icons8-github-48.png";
 import grainimg from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
+import whatsappImg from "@/assets/images/icons8-whatsapp-48.png";
 
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
 
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div className="absolute -z-10 inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainimg.src})` }}></div>
         <div className="size-[620px] hero-ring"></div>
         <div className="size-[820px] hero-ring"></div>
@@ -51,7 +52,7 @@ export const HeroSection = () => {
       <div className="container">
 
         <div className="flex flex-col items-center">
-          <Image src={memoimg} className="size-[100px]" alt="Person using a Laptop" />
+          <Image src={myImg} className="size-[150px] rounded-full" alt="Person using a Laptop" />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
@@ -66,14 +67,14 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl">
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+          <a href="https://github.com/AhmedSaadRF" target="_blank" className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl">
+            <span className="font-semibold">Personal GitHub</span>
+            <Image src={GitHubImg} alt="GitHub" className="size-7" />
+          </a>
+            <a href="https://wa.me/+201063596560" target="_blank" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+              <Image src={whatsappImg} alt="Whatsapp" className="size-7" />
+              <span className="font-semibold">Let&apos;s Connect</span>
+            </a>
         </div>
 
       </div>
