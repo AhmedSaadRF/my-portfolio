@@ -12,6 +12,10 @@
   .hero-ring {
     @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5
   }
+
+  .active {
+    @apply  bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900;
+  }
 }
 
 @layer utilities {
@@ -20,3 +24,51 @@
   }
 }
 
+
+/* Add these styles to your global CSS file (e.g., globals.css) */
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect with ripple animation */
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+  z-index: -1;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* Scale utilities for hover effects */
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+
+/* Smooth section scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add section padding for better scroll detection */
+section {
+  scroll-margin-top: 80px; /* Adjust based on your header height */
+}
+
+/* Enhanced backdrop blur for better visibility */
+.backdrop-blur {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
