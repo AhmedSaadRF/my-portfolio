@@ -1,6 +1,5 @@
 import StarIcon from "@/assets/icons/star.svg";
 import { Fragment } from "react";
-import { HeroOrbit } from "@/components/HeroOrbit";
 
 const words = [
   "Performant",
@@ -14,6 +13,24 @@ const words = [
   "Search Optimized",
   "Usable",
   "Reliable",
+  "Innovative",
+  "Efficient",
+  "Adaptable",
+  "Collaborative",
+  "Cross-Platform",
+  "High-Performance",
+  "Future-Proof",
+  "User-Centric",
+  "Cross-Browser",
+  "High-Quality",
+  "Cross-Device",
+  "High-End",
+  "High-Resolution",
+  "High-Definition",
+  "High-Speed",
+  "High-Volume",
+  "High-Capacity",
+  "High-Precision",
 ];
 
 export const TapeSection = () => {
@@ -21,7 +38,7 @@ export const TapeSection = () => {
     <div className="py-16 lg:py-24 overflow-x-clip">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
         <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex flex-none gap-4 pr-4 py-3 animate-move-left [animation-duration:30s]">
+          <div className="flex flex-none gap-4 pr-4 py-3 animate-move-left [animation-duration:50s]">
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {words.map((word) => (
