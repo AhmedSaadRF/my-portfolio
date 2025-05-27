@@ -1,5 +1,6 @@
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import WhatsappImg from "@/assets/images/icons8-whatsapp-48.png";
 import grainImage from "@/assets/images/grain.jpg";
+import Image from "next/image";
 
 export const ContactSection = () => {
   return (
@@ -13,10 +14,10 @@ export const ContactSection = () => {
               <p className="text-sm mt-2 md:text-base">Ready to bring your next project to life? Let&apos;s connect and discuss how I can help you achieve your goals.</p>
             </div>
             <div>
-              <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+              <a href="https://wa.me/+201063596560" target="_blank" className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer">
                 <span className="font-semibold">Contact Me</span>
-                <ArrowUpRightIcon className="size-4" />
-              </button>
+                <Image src={WhatsappImg} alt="Whatsapp" className="size-7" />
+              </a>
             </div>
           </div>
         </div>
