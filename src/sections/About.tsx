@@ -9,7 +9,7 @@ import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/map.png";
-import smileMemo from "@/assets/images/memoji-smile.png";
+import myImg from "@/assets/images/1704637099130.jpg";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolBoxItems } from "@/components/ToolBoxItems";
 import { motion } from "framer-motion";
@@ -167,15 +167,17 @@ export const AboutSection = () => {
             </div>
 
             <div className="md:col-span-2 lg:col-span-1">
-              <Card className="h-[320px] p-0 relative md:col-span-1">
-                <Image src={mapImage} alt="Map" className="h-full w-full object-cover object-left-top" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-                  <div className="absolute inset-0 rounded-full bg-white/30 bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
-                  <div className="absolute inset-0 rounded-full bg-white/30 bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
+              <a href="https://maps.app.goo.gl/mSMrAhwqmw7kQePV6" target="_blank">
+                <Card className="h-[320px] p-0 relative md:col-span-1">
+                  <Image src={mapImage} alt="Map" className="h-full w-full object-cover object-left-top" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                    <div className="absolute inset-0 rounded-full bg-white/30 bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
+                    <div className="absolute inset-0 rounded-full bg-white/30 bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
 
-                  <Image src={smileMemo} alt="Memoji" className="size-20" />
-                </div>
-              </Card>
+                    <Image src={myImg} alt="Memoji" className="size-20 rounded-full" />
+                  </div>
+                </Card>
+              </a>
             </div>
           </div>      
 
