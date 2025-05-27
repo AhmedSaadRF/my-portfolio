@@ -7,7 +7,6 @@ import JavaScriptIcon from "@/assets/icons/square-js.svg";
 import HtmlIcon from "@/assets/icons/html5.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemo from "@/assets/images/memoji-smile.png";
@@ -15,6 +14,14 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolBoxItems } from "@/components/ToolBoxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import CIcon from "@/assets/icons/C.svg";
+import TypeScriptIcon from "@/assets/icons/icons8-typescript.svg";
+import NextIcon from "@/assets/icons/Next.js.svg";
+import TailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
+import CppIcon from "@/assets/icons/cplusplus-svgrepo-com.svg";
+import PythonIcon from "@/assets/icons/icons8-python.svg";
+import JavaIcon from "@/assets/icons/icons8-java.svg";
+import BootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 
 const toolboxItems = [
   {
@@ -34,12 +41,40 @@ const toolboxItems = [
     iconType: <ReactIcon />,
   },
   {
-    title: "Chrome",
-    iconType: <ChromeIcon />,
+    title: "C-Lang",
+    iconType: <CIcon className="size-10" />,
   },
   {
     title: "Github",
     iconType: <GithubIcon />,
+  },
+  {
+    title: "TypeScript",
+    iconType: <TypeScriptIcon />,
+  },
+  {
+    title: "Next.js",
+    iconType: <NextIcon />,
+  },
+  {
+    title: "Tailwind CSS",
+    iconType: <TailwindIcon className="size-10" />,
+  },
+  {
+    title: "Cpp",
+    iconType: <CppIcon className="size-10" />,
+  },
+  {
+    title: "Python",
+    iconType: <PythonIcon />,
+  },
+  {
+    title: "Java",
+    iconType: <JavaIcon />,
+  },
+  {
+    title: "Bootstrap",
+    iconType: <BootstrapIcon />,
   },
 ];
 
@@ -110,8 +145,8 @@ export const AboutSection = () => {
             <div className="md:col-span-3 lg:col-span-2">
               <Card className="h-[320px]">
                 <CardHeader title="My Toolbox" description="Explore the technologies and tools I use to craft exceptional digital experiences." />
-                <ToolBoxItems items={toolboxItems} itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
-                <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:15s]" />
+                <ToolBoxItems items={toolboxItems} itemsWrapperClassName="animate-move-left [animation-duration:60s]" />
+                <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:30s]" />
               </Card>
             </div>
           </div>
