@@ -3,13 +3,8 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const footerLinks = [
   {
-    title: "YouTube",
-    link: "https://www.youtube.com/@AhmedRFRF-z3u",
-    isExternal: true,
-  },
-  {
-    title: "Twitter",
-    link: "https://x.com/AHMED76865307",
+    title: "Whatsapp",
+    link: "https://wa.me/+201063596560",
     isExternal: true,
   },
   {
@@ -20,6 +15,21 @@ const footerLinks = [
   {
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/ahmed-saad-833819366/",
+    isExternal: true,
+  },
+  {
+    title: "GitHub",
+    link: "https://github.com/AhmedSaadRF",
+    isExternal: true,
+  },
+  {
+    title: "Telegram",
+    link: "http://t.me/AhmedSaadAlrefaey",
+    isExternal: true,
+  },
+  {
+    title: "Email",
+    link: "ahmedsaadalrefaey7@gmail.com",
     isExternal: true,
   },
 ];
