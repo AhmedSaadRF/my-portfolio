@@ -14,7 +14,7 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolBoxItems } from "@/components/ToolBoxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import CIcon from "@/assets/icons/C.svg";
+import CIcon from "@/assets/icons/cLang.svg";
 import TypeScriptIcon from "@/assets/icons/icons8-typescript.svg";
 import NextIcon from "@/assets/icons/Next.js.svg";
 import TailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
