@@ -5,7 +5,7 @@ import { Fragment } from "react";
 export const ToolBoxItems = ({ items, className, itemsWrapperClassName, }: { items: { title: string; iconType: React.ReactNode }[]; className?: string; itemsWrapperClassName?: string; }) => {
   return (
     <div className={twMerge("flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]", className)}>
-      <div className={twMerge("flex flex-none py-0.5 gap-6 pr-6", itemsWrapperClassName)}>
+      <div className={twMerge("flex flex-none py-0.5 gap-6 pr-6 justify-center items-center", itemsWrapperClassName)}>
         {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {items.map((item) => (

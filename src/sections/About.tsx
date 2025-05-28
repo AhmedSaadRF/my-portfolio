@@ -26,11 +26,11 @@ import BootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 const toolboxItems = [
   {
     title: "JavaScript",
-    iconType: <JavaScriptIcon />,
+    iconType: <JavaScriptIcon className="size-[43px]" />,
   },
   {
     title: "HTML5",
-    iconType: <HtmlIcon />,
+    iconType: <HtmlIcon className="size-11" />,
   },
   {
     title: "CSS3",
@@ -50,7 +50,7 @@ const toolboxItems = [
   },
   {
     title: "TypeScript",
-    iconType: <TypeScriptIcon />,
+    iconType: <TypeScriptIcon className="size-[43px]" />,
   },
   {
     title: "Next.js",
@@ -66,15 +66,15 @@ const toolboxItems = [
   },
   {
     title: "Python",
-    iconType: <PythonIcon />,
+    iconType: <PythonIcon className="size-10" />,
   },
   {
     title: "Java",
-    iconType: <JavaIcon />,
+    iconType: <JavaIcon className="size-10" />,
   },
   {
     title: "Bootstrap",
-    iconType: <BootstrapIcon />,
+    iconType: <BootstrapIcon className="size-11" />,
   },
 ];
 
