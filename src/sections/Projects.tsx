@@ -10,7 +10,18 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 const portfolioProjects = [
-    {
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "To-Do-App",
+    results: [
+      { title: "React"},
+      { title: "Local Storage" },
+    ],
+    link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
+    image: ToDoAppPage,
+  },
+  {
     company: "RFRF Projects",
     year: "2025",
     title: "Dark Saas Landing Page",
@@ -21,17 +32,6 @@ const portfolioProjects = [
     ],
     link: "https://saas-website-dark-landing-page-teal.vercel.app/",
     image: darkSaasLandingPage,
-    },
-    {
-    company: "RFRF Projects",
-    year: "2025",
-    title: "To-Do-App",
-    results: [
-      { title: "React"},
-      { title: "Local Storage" },
-    ],
-    link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
-    image: ToDoAppPage,
   },
   {
     company: "Innovative Co",
