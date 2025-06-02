@@ -22,6 +22,7 @@ import CppIcon from "@/assets/icons/cplusplus-svgrepo-com.svg";
 import PythonIcon from "@/assets/icons/icons8-python.svg";
 import JavaIcon from "@/assets/icons/icons8-java.svg";
 import BootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
+import SASSIcon from "@/assets/icons/icons8-sass.svg";
 
 const toolboxItems = [
   {
@@ -75,6 +76,10 @@ const toolboxItems = [
   {
     title: "Bootstrap",
     iconType: <BootstrapIcon className="size-11" />,
+  },
+  {
+    title: "SASS",
+    iconType: <SASSIcon className="size-10" />,
   },
 ];
 
