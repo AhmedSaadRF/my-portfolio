@@ -23,6 +23,7 @@ import PythonIcon from "@/assets/icons/icons8-python.svg";
 import JavaIcon from "@/assets/icons/icons8-java.svg";
 import BootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 import SASSIcon from "@/assets/icons/icons8-sass.svg";
+import ReduxIcon from "@/assets/icons/redux-svgrepo-com.svg"
 
 const toolboxItems = [
   {
@@ -80,6 +81,10 @@ const toolboxItems = [
   {
     title: "SASS",
     iconType: <SASSIcon className="size-10" />,
+  },
+  {
+    title: "Redux",
+    iconType: <ReduxIcon className="size-10" />,
   },
 ];
 
