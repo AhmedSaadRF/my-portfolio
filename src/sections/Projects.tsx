@@ -17,6 +17,7 @@ const portfolioProjects = [
     title: "To-Do-App",
     results: [
       { title: "React"},
+      { title: "Java Script" },
       { title: "Local Storage" },
     ],
     link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
@@ -31,7 +32,7 @@ const portfolioProjects = [
       { title: "CSS" },
       { title: "JS" },
     ],
-    link: "https://responsive-multipage-website.vercel.app/",
+    link: "responsives-multipage-website.vercel.app",
     image: responsivemultipage,
   },
   {
@@ -47,27 +48,27 @@ const portfolioProjects = [
     image: darkSaasLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
+    company: "RFRF Projects",
+    year: "2025",
     title: "Light Saas Landing Page",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "#",
     image: lightSaasLandingPage,
   },
   {
     company: "Quantum Dynamics",
-    year: "2023",
+    year: "2025",
     title: "AI Startup Landing Page",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "#",
     image: aiStartupLandingPage,
   },
 ];
