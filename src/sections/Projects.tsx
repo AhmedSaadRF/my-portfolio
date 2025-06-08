@@ -32,7 +32,7 @@ const portfolioProjects = [
       { title: "CSS" },
       { title: "JS" },
     ],
-    link: "https://responsives-multipage-website.vercel.app/",
+    link: "https://responsive-multipage-website.vercel.app/",
     image: responsivemultipage,
   },
   {
