@@ -31,6 +31,7 @@ import NodeJSIcon from "@/assets/icons/icons8-nodejs.svg";
 import FirebaseIcon from "@/assets/icons/icons8-firebase.svg";
 import FontAwesomeIcon from "@/assets/icons/font-awesome-svgrepo-com.svg";
 import GoogleFontsIcon from "@/assets/icons/icons8-google-fonts.svg";
+import AdobeXDIcon from "@/assets/icons/icons8-adobe-xd.svg";
 
 const toolboxItems = [
   {
@@ -116,6 +117,10 @@ const toolboxItems = [
   {
     title: "Google Fonts",
     iconType: <GoogleFontsIcon className="size-10" />,
+  },
+  {
+    title: "Adobe XD",
+    iconType: <AdobeXDIcon className="size-10" />,
   },
 ];
 
