@@ -192,8 +192,8 @@ export const AboutSection = () => {
             <div className="md:col-span-3 lg:col-span-2">
               <Card className="h-[320px]">
                 <CardHeader title="My Toolbox" description="Explore the technologies and tools I use to craft exceptional digital experiences." />
-                <ToolBoxItems items={toolboxItems} itemsWrapperClassName="animate-move-left [animation-duration:60s]" />
-                <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:30s]" />
+                <ToolBoxItems items={toolboxItems} itemsWrapperClassName="animate-move-left [animation-duration:100s]" />
+                <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:50s]" />
               </Card>
             </div>
           </div>
