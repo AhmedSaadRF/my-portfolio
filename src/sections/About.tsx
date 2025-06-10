@@ -24,7 +24,8 @@ import PythonIcon from "@/assets/icons/icons8-python.svg";
 import JavaIcon from "@/assets/icons/icons8-java.svg";
 import BootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 import SASSIcon from "@/assets/icons/icons8-sass.svg";
-import ReduxIcon from "@/assets/icons/redux-svgrepo-com.svg"
+import ReduxIcon from "@/assets/icons/redux-svgrepo-com.svg";
+import ExpressJSIcon from "@/assets/icons/icons8-express-js.svg";
 
 const toolboxItems = [
   {
@@ -86,6 +87,10 @@ const toolboxItems = [
   {
     title: "Redux",
     iconType: <ReduxIcon className="size-10" />,
+  },
+  {
+    title: "Express JS",
+    iconType: <ExpressJSIcon className="size-10" />,
   },
 ];
 
