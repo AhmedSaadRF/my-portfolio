@@ -29,6 +29,7 @@ import ExpressJSIcon from "@/assets/icons/icons8-express-js.svg";
 import GulpJSIcon from "@/assets/icons/icons8-gulp.svg";
 import NodeJSIcon from "@/assets/icons/icons8-nodejs.svg";
 import FirebaseIcon from "@/assets/icons/icons8-firebase.svg";
+import FontAwesomeIcon from "@/assets/icons/font-awesome-svgrepo-com.svg";
 
 const toolboxItems = [
   {
@@ -106,6 +107,10 @@ const toolboxItems = [
   {
     title: "Firebase",
     iconType: <FirebaseIcon className="size-10" />,
+  },
+  {
+    title: "FontAwesome",
+    iconType: <FontAwesomeIcon className="size-10" />,
   },
 ];
 
