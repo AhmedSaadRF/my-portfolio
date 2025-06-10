@@ -30,6 +30,7 @@ import GulpJSIcon from "@/assets/icons/icons8-gulp.svg";
 import NodeJSIcon from "@/assets/icons/icons8-nodejs.svg";
 import FirebaseIcon from "@/assets/icons/icons8-firebase.svg";
 import FontAwesomeIcon from "@/assets/icons/font-awesome-svgrepo-com.svg";
+import GoogleFontsIcon from "@/assets/icons/icons8-google-fonts.svg";
 
 const toolboxItems = [
   {
@@ -111,6 +112,10 @@ const toolboxItems = [
   {
     title: "FontAwesome",
     iconType: <FontAwesomeIcon className="size-10" />,
+  },
+  {
+    title: "Google Fonts",
+    iconType: <GoogleFontsIcon className="size-10" />,
   },
 ];
 
