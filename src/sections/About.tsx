@@ -1,4 +1,5 @@
 "use client";
+
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
