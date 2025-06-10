@@ -28,6 +28,7 @@ import ReduxIcon from "@/assets/icons/redux-svgrepo-com.svg";
 import ExpressJSIcon from "@/assets/icons/icons8-express-js.svg";
 import GulpJSIcon from "@/assets/icons/icons8-gulp.svg";
 import NodeJSIcon from "@/assets/icons/icons8-nodejs.svg";
+import FirebaseIcon from "@/assets/icons/icons8-firebase.svg";
 
 const toolboxItems = [
   {
@@ -101,6 +102,10 @@ const toolboxItems = [
   {
     title: "NodeJS",
     iconType: <NodeJSIcon className="size-10" />,
+  },
+  {
+    title: "Firebase",
+    iconType: <FirebaseIcon className="size-10" />,
   },
 ];
 
