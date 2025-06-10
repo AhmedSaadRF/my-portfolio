@@ -26,6 +26,7 @@ import BootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 import SASSIcon from "@/assets/icons/icons8-sass.svg";
 import ReduxIcon from "@/assets/icons/redux-svgrepo-com.svg";
 import ExpressJSIcon from "@/assets/icons/icons8-express-js.svg";
+import GulpJSIcon from "@/assets/icons/icons8-gulp.svg";
 
 const toolboxItems = [
   {
@@ -89,8 +90,12 @@ const toolboxItems = [
     iconType: <ReduxIcon className="size-10" />,
   },
   {
-    title: "Express JS",
+    title: "ExpressJS",
     iconType: <ExpressJSIcon className="size-10" />,
+  },
+  {
+    title: "GulpJS",
+    iconType: <GulpJSIcon className="size-10" />,
   },
 ];
 
