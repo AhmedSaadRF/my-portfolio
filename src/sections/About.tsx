@@ -26,6 +26,9 @@ import BootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 import SASSIcon from "@/assets/icons/icons8-sass.svg";
 import ReduxIcon from "@/assets/icons/redux-svgrepo-com.svg";
 import ExpressJSIcon from "@/assets/icons/icons8-express-js.svg";
+import GulpJSIcon from "@/assets/icons/icons8-gulp.svg";
+import NodeJSIcon from "@/assets/icons/icons8-nodejs.svg";
+import FirebaseIcon from "@/assets/icons/icons8-firebase.svg";
 
 const toolboxItems = [
   {
@@ -89,8 +92,20 @@ const toolboxItems = [
     iconType: <ReduxIcon className="size-10" />,
   },
   {
-    title: "Express JS",
+    title: "ExpressJS",
     iconType: <ExpressJSIcon className="size-10" />,
+  },
+  {
+    title: "GulpJS",
+    iconType: <GulpJSIcon className="size-10" />,
+  },
+  {
+    title: "NodeJS",
+    iconType: <NodeJSIcon className="size-10" />,
+  },
+  {
+    title: "Firebase",
+    iconType: <FirebaseIcon className="size-10" />,
   },
 ];
 
