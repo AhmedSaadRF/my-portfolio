@@ -27,6 +27,7 @@ import SASSIcon from "@/assets/icons/icons8-sass.svg";
 import ReduxIcon from "@/assets/icons/redux-svgrepo-com.svg";
 import ExpressJSIcon from "@/assets/icons/icons8-express-js.svg";
 import GulpJSIcon from "@/assets/icons/icons8-gulp.svg";
+import NodeJSIcon from "@/assets/icons/icons8-nodejs.svg";
 
 const toolboxItems = [
   {
@@ -96,6 +97,10 @@ const toolboxItems = [
   {
     title: "GulpJS",
     iconType: <GulpJSIcon className="size-10" />,
+  },
+  {
+    title: "NodeJS",
+    iconType: <NodeJSIcon className="size-10" />,
   },
 ];
 
