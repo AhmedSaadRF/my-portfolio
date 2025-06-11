@@ -33,6 +33,7 @@ import FontAwesomeIcon from "@/assets/icons/font-awesome-svgrepo-com.svg";
 import GoogleFontsIcon from "@/assets/icons/icons8-google-fonts.svg";
 import AdobeXDIcon from "@/assets/icons/icons8-adobe-xd.svg";
 import FigmaIcon from "@/assets/icons/icons8-figma.svg";
+import MaterialUIIcon from "@/assets/icons/icons8-material-ui.svg";
 
 const toolboxItems = [
   {
@@ -126,6 +127,10 @@ const toolboxItems = [
   {
     title: "Figma",
     iconType: <FigmaIcon className="size-10" />,
+  },
+  {
+    title: "Material UI",
+    iconType: <MaterialUIIcon className="size-10" />,
   },
 ];
 
