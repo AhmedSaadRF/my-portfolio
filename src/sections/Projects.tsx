@@ -50,7 +50,7 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "To-Do-App",
+    title: "To-Do-App Project",
     results: [
       { title: "React"},
       { title: "Java Script" },
