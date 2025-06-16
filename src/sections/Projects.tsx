@@ -68,7 +68,7 @@ const portfolioProjects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "#",
+    link: "https://light-saas-landing-page-eight.vercel.app/",
     image: lightSaasLandingPage,
   },
   {
