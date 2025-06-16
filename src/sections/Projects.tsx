@@ -14,18 +14,6 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "To-Do-App",
-    results: [
-      { title: "React"},
-      { title: "Java Script" },
-      { title: "Local Storage" },
-    ],
-    link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
-    image: ToDoAppPage,
-  },
-  {
-    company: "RFRF Projects",
-    year: "2025",
     title: "Responsive Multipage Website",
     results: [
       { title: "HTNL" },
@@ -58,6 +46,18 @@ const portfolioProjects = [
     ],
     link: "https://small-react-mui-project.vercel.app/",
     image: smallReactMUIProject,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "To-Do-App",
+    results: [
+      { title: "React"},
+      { title: "Java Script" },
+      { title: "Local Storage" },
+    ],
+    link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
+    image: ToDoAppPage,
   },
   {
     company: "RFRF Projects",
