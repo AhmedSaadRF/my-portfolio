@@ -50,18 +50,6 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "To-Do-App",
-    results: [
-      { title: "React"},
-      { title: "Java Script" },
-      { title: "Local Storage" },
-    ],
-    link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
-    image: ToDoAppPage,
-  },
-  {
-    company: "RFRF Projects",
-    year: "2025",
     title: "Light Saas Landing Page",
     results: [
       { title: "Boosted sales by 20%" },
@@ -70,6 +58,18 @@ const portfolioProjects = [
     ],
     link: "https://light-saas-landing-page-eight.vercel.app/",
     image: lightSaasLandingPage,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "To-Do-App",
+    results: [
+      { title: "React"},
+      { title: "Java Script" },
+      { title: "Local Storage" },
+    ],
+    link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
+    image: ToDoAppPage,
   },
   {
     company: "Quantum Dynamics",
