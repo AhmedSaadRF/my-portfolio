@@ -50,7 +50,7 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "To-Do-App-List Project",
+    title: "To-Do-App",
     results: [
       { title: "React"},
       { title: "Java Script" },
@@ -95,7 +95,7 @@ export const ProjectsSection = () => {
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
           {portfolioProjects.map((project, projectIndex) => (
 
-              <div key={project.title} className="sticky"  style={{ top: `calc(64px + ${projectIndex * 40}px)` }}>
+              <div key={project.title} className="sticky"  style={{ top: projectIndex <= 3 ? `calc(64px + ${projectIndex * 40}px)` : `calc(64px + ${3 * 40}px)` }}>
                 <Card className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20">
                   <div className="lg:grid lg:grid-cols-2 lg:gap-16">
 
