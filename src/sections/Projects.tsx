@@ -38,6 +38,18 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
+    title: "Light Saas Landing Page",
+    results: [
+      { title: "Next.js" },
+      { title: "Tailwind CSS" },
+      { title: "Framer Motion" },
+    ],
+    link: "https://light-saas-landing-page-eight.vercel.app/",
+    image: lightSaasLandingPage,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
     title: "Small React MUI Project",
     results: [
       { title: "React" },
@@ -46,18 +58,6 @@ const portfolioProjects = [
     ],
     link: "https://small-react-mui-project.vercel.app/",
     image: smallReactMUIProject,
-  },
-  {
-    company: "RFRF Projects",
-    year: "2025",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://light-saas-landing-page-eight.vercel.app/",
-    image: lightSaasLandingPage,
   },
   {
     company: "RFRF Projects",
