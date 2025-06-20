@@ -28,7 +28,7 @@ const portfolioProjects = [
     year: "2025",
     title: "Dark Saas Landing Page",
     results: [
-      { title: "Next.js" },
+      { title: "Next js" },
       { title: "Tailwind CSS" },
       { title: "Framer Motion" },
     ],
@@ -40,12 +40,24 @@ const portfolioProjects = [
     year: "2025",
     title: "Light Saas Landing Page",
     results: [
-      { title: "Next.js" },
+      { title: "Next js" },
       { title: "Tailwind CSS" },
       { title: "Framer Motion" },
     ],
     link: "https://light-saas-landing-page-eight.vercel.app/",
     image: lightSaasLandingPage,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "AI Landing Page",
+    results: [
+      { title: "Next js" },
+      { title: "Tailwind CSS" },
+      { title: "Framer Motion" },
+    ],
+    link: "https://ai-landing-page-omega-teal.vercel.app/",
+    image: aiStartupLandingPage,
   },
   {
     company: "RFRF Projects",
@@ -70,18 +82,6 @@ const portfolioProjects = [
     ],
     link: "https://ahmedsaadrf.github.io/todo-list-web-app/",
     image: ToDoAppPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2025",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "#",
-    image: aiStartupLandingPage,
   },
 ];
 
