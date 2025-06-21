@@ -34,6 +34,7 @@ import GoogleFontsIcon from "@/assets/icons/icons8-google-fonts.svg";
 import AdobeXDIcon from "@/assets/icons/icons8-adobe-xd.svg";
 import FigmaIcon from "@/assets/icons/icons8-figma.svg";
 import MaterialUIIcon from "@/assets/icons/icons8-material-ui.svg";
+import AstroJS from "@/assets/icons/Astro.svg";
 
 const toolboxItems = [
   {
@@ -131,6 +132,10 @@ const toolboxItems = [
   {
     title: "Material UI",
     iconType: <MaterialUIIcon className="size-10" />,
+  },
+  {
+    title: "AstroJS",
+    iconType: <AstroJS className="size-10" />,
   },
 ];
 
