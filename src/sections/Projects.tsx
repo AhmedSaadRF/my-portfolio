@@ -9,8 +9,21 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import responsivemultipage from "@/assets/images/responsive-multipage.png";
 import smallReactMUIProject from "@/assets/images/localhost_3000_(1200).png";
+import darkSaasBlockchainSite from "@/assets/images/dark-saas-blockchain-site.png";
 
 const portfolioProjects = [
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "Dark Saas Blockchain Site",
+    results: [
+      { title: "Astro js" },
+      { title: "Tailwind CSS" },
+      { title: "Framer Motion" },
+    ],
+    link: "https://dark-saas-blockchain-site-5e5j.vercel.app/",
+    image: darkSaasBlockchainSite,
+  },
   {
     company: "RFRF Projects",
     year: "2025",
