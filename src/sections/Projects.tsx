@@ -63,7 +63,7 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "AI Landing Page",
+    title: "AI SEO Landing Page",
     results: [
       { title: "Next js" },
       { title: "Tailwind CSS" },
