@@ -10,6 +10,7 @@ import { Card } from "@/components/Card";
 import responsivemultipage from "@/assets/images/responsive-multipage.png";
 import smallReactMUIProject from "@/assets/images/localhost_3000_(1200).png";
 import darkSaasBlockchainSite from "@/assets/images/dark-saas-blockchain-site.png";
+import responsiveTripsWebsite from "@/assets/images/allam-travel.png";
 
 const portfolioProjects = [
   {
@@ -23,6 +24,18 @@ const portfolioProjects = [
     ],
     link: "https://dark-saas-blockchain-site-phi.vercel.app/",
     image: darkSaasBlockchainSite,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "Responsive Trips Website",
+    results: [
+      { title: "Vite js" },
+      { title: "aos Animation" },
+      { title: "TypeScript" },
+    ],
+    link: "https://allam-travel.vercel.app/",
+    image: responsiveTripsWebsite,
   },
   {
     company: "RFRF Projects",
