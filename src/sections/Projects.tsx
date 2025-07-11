@@ -16,7 +16,7 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "Dark Saas Blockchain Site",
+    title: "Dark Saas Blockchain Website",
     results: [
       { title: "Astro js" },
       { title: "Tailwind CSS" },
@@ -52,7 +52,7 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "Dark Saas Landing Page",
+    title: "Dark Saas Landing Website",
     results: [
       { title: "Next js" },
       { title: "Tailwind CSS" },
@@ -64,7 +64,7 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "Light Saas Landing Page",
+    title: "Light Saas Landing Website",
     results: [
       { title: "Next js" },
       { title: "Tailwind CSS" },
@@ -76,7 +76,7 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "AI SEO Landing Page",
+    title: "AI SEO Landing Website",
     results: [
       { title: "Next js" },
       { title: "Tailwind CSS" },
