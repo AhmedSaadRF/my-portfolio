@@ -35,6 +35,7 @@ import AdobeXDIcon from "@/assets/icons/icons8-adobe-xd.svg";
 import FigmaIcon from "@/assets/icons/icons8-figma.svg";
 import MaterialUIIcon from "@/assets/icons/icons8-material-ui.svg";
 import AstroJS from "@/assets/icons/Astro.svg";
+import NestJS from "@/assets/icons/Nest.svg";
 
 const toolboxItems = [
   {
@@ -136,6 +137,10 @@ const toolboxItems = [
   {
     title: "AstroJS",
     iconType: <AstroJS className="size-10" />,
+  },
+  {
+    title: "NestJS",
+    iconType: <NestJS className="size-10" />,
   },
 ];
 
