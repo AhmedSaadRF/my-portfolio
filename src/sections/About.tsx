@@ -36,6 +36,7 @@ import FigmaIcon from "@/assets/icons/icons8-figma.svg";
 import MaterialUIIcon from "@/assets/icons/icons8-material-ui.svg";
 import AstroJS from "@/assets/icons/Astro.svg";
 import NestJS from "@/assets/icons/Nest.svg";
+import MongoDB from "@/assets/icons/mongodb.svg";
 
 const toolboxItems = [
   {
@@ -141,6 +142,10 @@ const toolboxItems = [
   {
     title: "NestJS",
     iconType: <NestJS className="size-10" />,
+  },
+  {
+    title: "MongoDB",
+    iconType: <MongoDB className="size-10" />,
   },
 ];
 
