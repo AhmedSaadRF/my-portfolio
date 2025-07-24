@@ -38,6 +38,7 @@ import AstroJS from "@/assets/icons/Astro.svg";
 import NestJS from "@/assets/icons/Nest.svg";
 import MongoDB from "@/assets/icons/mongodb.svg";
 import MySQLDB from "@/assets/icons/mysql.svg";
+import JestJS from "@/assets/icons/jest.svg";
 
 const toolboxItems = [
   {
@@ -151,6 +152,10 @@ const toolboxItems = [
   {
     title: "MySQLDB",
     iconType: <MySQLDB className="size-10" />,
+  },
+  {
+    title: "JestJS",
+    iconType: <JestJS className="size-10" />,
   },
 ];
 
