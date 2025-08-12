@@ -8,7 +8,7 @@ const DownloadCVButton = () => {
     ? `${window.location.origin}/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf`
     : '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf';
   
-  const handleClick = async (e) => {
+  const handleClick = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     
     try {
