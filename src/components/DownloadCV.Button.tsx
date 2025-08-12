@@ -3,35 +3,51 @@
 import React from 'react';
 
 const DownloadCVButton = () => {
-  const cvUrl = '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf'; // Ensure this file exists in public/cv/
+  const cvUrl = '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf';
   
-  const handleClick = (e: { preventDefault: () => void; }) => {
+  const handleClick = async (e) => {
     e.preventDefault();
     
     try {
-      // First, try to open in new tab
-      const newTab = window.open(cvUrl, '_blank', 'noopener,noreferrer');
+      // First, check if the file exists
+      const response = await fetch(cvUrl, { method: 'HEAD' });
       
-      // If popup was blocked, fallback to direct download
-      if (!newTab) {
-        console.log('Popup blocked, attempting direct download...');
+      if (!response.ok) {
+        console.error('CV file not found:', response.status);
+        alert('Sorry, the CV file is currently unavailable. Please contact me directly.');
+        return;
       }
       
-      // Trigger download regardless
-      const link = document.createElement('a');
-      link.href = cvUrl;
-      link.setAttribute('download', 'Ahmed-Saad-FlowCV-Resume-20250809.pdf');
-      link.style.display = 'none'; // Hide the element
+      // If file exists, proceed with download
+      console.log('CV file found, initiating download...');
       
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // Try to open in new tab first
+      const newTab = window.open(cvUrl, '_blank', 'noopener,noreferrer');
       
-      console.log('Download initiated for:', cvUrl);
+      // Small delay then trigger download
+      setTimeout(() => {
+        const link = document.createElement('a');
+        link.href = cvUrl;
+        link.setAttribute('download', 'Ahmed-Saad-FlowCV-Resume.pdf');
+        link.style.display = 'none';
+        
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        console.log('Download completed for:', cvUrl);
+      }, 500);
+      
     } catch (error) {
-      console.error('Error downloading CV:', error);
-      // Fallback: direct navigation
-      window.location.href = cvUrl;
+      console.error('Error accessing CV:', error);
+      
+      // Ultimate fallback - try direct navigation
+      try {
+        window.location.href = cvUrl;
+      } catch (fallbackError) {
+        console.error('All download methods failed:', fallbackError);
+        alert('Unable to download CV. Please contact me directly for a copy.');
+      }
     }
   };
 
