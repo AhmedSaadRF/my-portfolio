@@ -11,6 +11,7 @@ import responsivemultipage from "@/assets/images/responsive-multipage.png";
 import smallReactMUIProject from "@/assets/images/localhost_3000_(1200).png";
 import darkSaasBlockchainSite from "@/assets/images/dark-saas-blockchain-site.png";
 import responsiveTripsWebsite from "@/assets/images/allam-travel.png";
+import socialMediaProject from "@/assets/images/socialmedia.png";
 
 const portfolioProjects = [
   {
@@ -28,6 +29,18 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
+    title: "Responsive Multipage Website",
+    results: [
+      { title: "HTNL" },
+      { title: "CSS" },
+      { title: "JS" },
+    ],
+    link: "https://responsive-multipage-website.vercel.app/",
+    image: responsivemultipage,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
     title: "Responsive Trips Website",
     results: [
       { title: "Vite js" },
@@ -40,14 +53,14 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "Responsive Multipage Website",
+    title: "Responsive Social Media Website",
     results: [
       { title: "HTNL" },
-      { title: "CSS" },
       { title: "JS" },
+      { title: "Bootstrap" },
     ],
-    link: "https://responsive-multipage-website.vercel.app/",
-    image: responsivemultipage,
+    link: "https://elaborate-sherbet-2df90d.netlify.app/profile.html?user=4237",
+    image: socialMediaProject,
   },
   {
     company: "RFRF Projects",

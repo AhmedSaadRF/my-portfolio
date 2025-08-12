@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] , variable: "--font-sans" });
 const calistoga = Calistoga({ subsets: ["latin"] , variable: "--font-serif" , weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Ahmed RFRF",
+  title: "Ahmed Alrefaey",
   description: "Created with Ahmed RFRF",
 };
 
