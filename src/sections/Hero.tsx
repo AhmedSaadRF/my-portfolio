@@ -71,8 +71,8 @@ export const HeroSection = () => {
           <div className="flex flex-row justify-center items-center gap-4 w-full">
             <DownloadCVButton />
             <a href="https://wa.me/+201063596560" target="_blank" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl font-semibold shadow hover:bg-emerald-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
-              <Image src={whatsappImg} alt="Whatsapp" className="size-7" />
               <span className="font-semibold">Let&apos;s Connect</span>
+              <Image src={whatsappImg} alt="Whatsapp" className="size-7" />
             </a>
           </div>
           <div className="flex justify-center w-full mt-2">
