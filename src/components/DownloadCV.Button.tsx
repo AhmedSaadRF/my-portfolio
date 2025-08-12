@@ -3,7 +3,10 @@
 import React from 'react';
 
 const DownloadCVButton = () => {
-  const cvUrl = '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf';
+  // Try absolute URL first, fallback to relative
+  const cvUrl = process.env.NODE_ENV === 'production' 
+    ? `${window.location.origin}/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf`
+    : '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf';
   
   const handleClick = async (e) => {
     e.preventDefault();
