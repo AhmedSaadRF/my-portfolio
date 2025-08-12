@@ -1,14 +1,25 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DownloadCVButton = () => {
-  // Try absolute URL first, fallback to relative
-  const cvUrl = process.env.NODE_ENV === 'production' 
-    ? `${window.location.origin}/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf`
-    : '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf';
+  const [cvUrl, setCvUrl] = useState('/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf');
   
-  const handleClick = async (e: { preventDefault: () => void; }) => {
+  useEffect(() => {
+    // Only run this in the browser
+    if (typeof window !== 'undefined') {
+      // Check if we're on localhost or production
+      const isLocalhost = window.location.hostname === 'localhost' || 
+                         window.location.hostname === '127.0.0.1';
+      
+      const url = isLocalhost 
+        ? '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf'
+        : `${window.location.origin}/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf`;
+      setCvUrl(url);
+    }
+  }, []);
+  
+  const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     
     try {
