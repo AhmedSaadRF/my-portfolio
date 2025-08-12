@@ -66,15 +66,23 @@ export const HeroSection = () => {
           <p className="mt-4 text-center text-white/60 md:text-lg">I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.</p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="https://github.com/AhmedSaadRF" target="_blank" className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl">
-            <span className="font-semibold">Personal GitHub</span>
-            <Image src={GitHubImg} alt="GitHub" className="size-7" />
-          </a>
-            <a href="https://wa.me/+201063596560" target="_blank" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+        <div className="flex flex-col items-center mt-8 gap-2 w-full">
+          <div className="flex flex-row justify-center items-center gap-4 w-full">
+            <a href="" target="_blank" className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold shadow transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+              <span className="font-semibold">Download CV</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="size-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+            </a>
+            <a href="https://wa.me/+201063596560" target="_blank" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl font-semibold shadow hover:bg-emerald-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
               <Image src={whatsappImg} alt="Whatsapp" className="size-7" />
               <span className="font-semibold">Let&apos;s Connect</span>
             </a>
+          </div>
+          <div className="flex justify-center w-full mt-2">
+            <a href="https://github.com/AhmedSaadRF" target="_blank" className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl bg-gray-900 hover:bg-gray-800 text-white font-semibold shadow transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400">
+              <span className="font-semibold">Personal GitHub</span>
+              <Image src={GitHubImg} alt="GitHub" className="size-7" />
+            </a>
+          </div>
         </div>
 
       </div>
