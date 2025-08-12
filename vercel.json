@@ -1,16 +1,16 @@
-{
-  "functions": {
-    "app/**/*.js": {
-      "runtime": "@vercel/node"
-    }
-  },
-  "routes": [
-    {
-      "src": "/cv/(.*)",
-      "dest": "/cv/$1",
-      "headers": {
-        "Cache-Control": "s-maxage=86400"
-      }
-    }
-  ]
-}
+// {
+//   "functions": {
+//     "app/**/*.js": {
+//       "runtime": "@vercel/node"
+//     }
+//   },
+//   "routes": [
+//     {
+//       "src": "/cv/(.*)",
+//       "dest": "/cv/$1",
+//       "headers": {
+//         "Cache-Control": "s-maxage=86400"
+//       }
+//     }
+//   ]
+// }
