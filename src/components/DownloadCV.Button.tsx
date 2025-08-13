@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 
 const DownloadCVButton = () => {
-  const [cvUrl, setCvUrl] = useState('/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf');
+  const [cvUrl, setCvUrl] = useState('/cv/Ahmed-Saad.pdf');
 
   useEffect(() => {
     // Only run this in the browser
@@ -92,3 +92,4 @@ const DownloadCVButton = () => {
 };
 
 export default DownloadCVButton;
+
