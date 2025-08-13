@@ -13,8 +13,8 @@ const DownloadCVButton = () => {
         window.location.hostname === '127.0.0.1';
 
       const url = isLocalhost
-        ? '/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf'
-        : `${window.location.origin}/cv/Ahmed-Saad-FlowCV-Resume-20250809.pdf`;
+        ? '/cv/Ahmed-Saad.pdf'
+        : `${window.location.origin}/cv/Ahmed-Saad.pdf`;
       setCvUrl(url);
     }
   }, []);
@@ -35,14 +35,13 @@ const DownloadCVButton = () => {
       // If file exists, proceed with download
       console.log('CV file found, initiating download...');
 
-      // Try to open in new tab first
-      const newTab = window.open(cvUrl, '_blank', 'noopener,noreferrer');
+      // Open in new tab first, then trigger download after a delay
+      const newTab = window.open(cvUrl, '_blank', 'noopener,noreferrer'); // Open in new tab first
 
-      // Small delay then trigger download
       setTimeout(() => {
         const link = document.createElement('a');
         link.href = cvUrl;
-        link.setAttribute('download', 'Ahmed-Saad-FlowCV-Resume.pdf');
+        link.setAttribute('download', 'Ahmed-Saad.pdf');
         link.style.display = 'none';
 
         document.body.appendChild(link);
