@@ -210,7 +210,8 @@ export const ProjectsSection = () => {
                     </div>
 
                     <div className="relative">
-                      {project.title === "Donation Website 1" ? (
+                      {project.images && project.images.length > 0 ? (
+
                         <AnimatePresence mode="wait">
                           <motion.div
                             key={`${project.title}-${donationImageIndex}`}
