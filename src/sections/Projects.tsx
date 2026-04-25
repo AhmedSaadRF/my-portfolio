@@ -1,4 +1,7 @@
+"use client";
+
 import ToDoAppPage from "@/assets/images/todo-app.png";
+
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
@@ -220,9 +223,10 @@ export const ProjectsSection = () => {
                             <Image 
                               src={project.images![donationImageIndex]} 
                               alt={project.title} 
-                              className="rounded-2xl shadow-2xl" 
+                              className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:w-auto lg:max-w-none rounded-2xl shadow-2xl" 
                             />
                           </motion.div>
+
                         </AnimatePresence>
                       ) : (
                         <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl" />
