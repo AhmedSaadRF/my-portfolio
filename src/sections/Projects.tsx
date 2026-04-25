@@ -80,9 +80,9 @@ const portfolioProjects = [
     year: "2025",
     title: "Admin Dashboard Website",
     results: [
-      { title: "React js" },
-      { title: "Material UI" },
-      { title: "Framer Motion" },
+      { title: "HTML" },
+      { title: "CSS" },
+      { title: "JavaScript" },
     ],
     link: "https://admin-dashboard-two-delta.vercel.app/",
     image: adminDashboardPage,
