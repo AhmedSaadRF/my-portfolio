@@ -13,6 +13,11 @@ import darkSaasBlockchainSite from "@/assets/images/dark-saas-blockchain-site.pn
 import responsiveTripsWebsite from "@/assets/images/allam-travel.png";
 import socialMediaProject from "@/assets/images/socialmedia.png";
 import adminDashboardPage from "@/assets/images/admin-dashboard.png";
+import DonationWebsite1Dark from "@/assets/images/donation-page1-dark.png";
+import DonationWebsite1Light from "@/assets/images/donation-page1-light.png";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const portfolioProjects = [
   {
@@ -90,6 +95,21 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
+    title: "Donation Website 1",
+    results: [
+      { title: "HTML" },
+      { title: "CSS" },
+      { title: "JavaScript" },
+    ],
+    link: "https://ahmedsaadrf.github.io/donation-website/",
+    image: DonationWebsite1Dark,
+    images: [DonationWebsite1Dark, DonationWebsite1Light],
+  },
+
+
+  {
+    company: "RFRF Projects",
+    year: "2025",
     title: "Light Saas Landing Website",
     results: [
       { title: "Next js" },
@@ -138,7 +158,17 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
+  const [donationImageIndex, setDonationImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDonationImageIndex((prev) => (prev === 0 ? 1 : 0));
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
+
     <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
 
@@ -177,8 +207,28 @@ export const ProjectsSection = () => {
                     </div>
 
                     <div className="relative">
-                      <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl" />
+                      {project.title === "Donation Website 1" ? (
+                        <AnimatePresence mode="wait">
+                          <motion.div
+                            key={`${project.title}-${donationImageIndex}`}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 1.05 }}
+                            transition={{ duration: 0.8, ease: "easeInOut" }}
+                            className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                          >
+                            <Image 
+                              src={project.images![donationImageIndex]} 
+                              alt={project.title} 
+                              className="rounded-2xl shadow-2xl" 
+                            />
+                          </motion.div>
+                        </AnimatePresence>
+                      ) : (
+                        <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl" />
+                      )}
                     </div>
+
 
                   </div>
 
