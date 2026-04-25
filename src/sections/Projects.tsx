@@ -12,6 +12,7 @@ import smallReactMUIProject from "@/assets/images/localhost_3000_(1200).png";
 import darkSaasBlockchainSite from "@/assets/images/dark-saas-blockchain-site.png";
 import responsiveTripsWebsite from "@/assets/images/allam-travel.png";
 import socialMediaProject from "@/assets/images/socialmedia.png";
+import adminDashboardPage from "@/assets/images/admin-dashboard.png";
 
 const portfolioProjects = [
   {
@@ -73,6 +74,18 @@ const portfolioProjects = [
     ],
     link: "https://saas-website-dark-landing-page-teal.vercel.app/",
     image: darkSaasLandingPage,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "Admin Dashboard Website",
+    results: [
+      { title: "React js" },
+      { title: "Material UI" },
+      { title: "Framer Motion" },
+    ],
+    link: "https://admin-dashboard-two-delta.vercel.app/",
+    image: adminDashboardPage,
   },
   {
     company: "RFRF Projects",
