@@ -104,7 +104,7 @@ const portfolioProjects = [
       { title: "CSS" },
       { title: "JavaScript" },
     ],
-    link: "https://donation-page1.vercel.app/#home",
+    link: "https://donation-page1.vercel.app/",
     image: DonationWebsite1Dark,
     images: [DonationWebsite1Dark, DonationWebsite1Light],
   },
