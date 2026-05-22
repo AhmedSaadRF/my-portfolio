@@ -16,12 +16,8 @@ import darkSaasBlockchainSite from "@/assets/images/dark-saas-blockchain-site.pn
 import responsiveTripsWebsite from "@/assets/images/allam-travel.png";
 import socialMediaProject from "@/assets/images/socialmedia.png";
 import adminDashboardPage from "@/assets/images/admin-dashboard.png";
-import DonationWebsite1Dark from "@/assets/images/donation-page1-dark.png";
-import DonationWebsite1Light from "@/assets/images/donation-page1-light.png";
-import ofoqLibraryLight from "@/assets/images/ofoq-library-light.png";
-import ofoqLibraryDark from "@/assets/images/ofoq-library-dark.png";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import donationShowcase from "@/assets/images/donation-showcase.svg?url";
+import ofoqShowcase from "@/assets/images/ofoq-showcase.svg?url";
 
 
 const portfolioProjects = [
@@ -35,8 +31,7 @@ const portfolioProjects = [
       { title: "JavaScript" },
     ],
     link: "https://donation-page1.vercel.app/",
-    image: DonationWebsite1Dark,
-    images: [DonationWebsite1Dark, DonationWebsite1Light],
+    image: donationShowcase,
   },
   {
     company: "RFRF Projects",
@@ -48,8 +43,7 @@ const portfolioProjects = [
       { title: "JavaScript" },
     ],
     link: "https://ahmed-alrefaey.vercel.app/",
-    image: ofoqLibraryDark,
-    images: [ofoqLibraryDark, ofoqLibraryLight],
+    image: ofoqShowcase,
   },
   {
     company: "RFRF Projects",
@@ -174,15 +168,6 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
-  const [donationImageIndex, setDonationImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDonationImageIndex((prev) => (prev === 0 ? 1 : 0));
-    }, 3500);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
 
     <section className="pb-16 lg:py-24" id="projects">
@@ -223,33 +208,11 @@ export const ProjectsSection = () => {
                   </div>
 
                   <div className="relative">
-                    {project.images && project.images.length > 0 ? (
-                      <div className="relative mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none">
-                        {project.images.map((img, idx) => (
-                          <motion.div
-                            key={idx}
-                            initial={{ opacity: idx === 0 ? 1 : 0 }}
-                            animate={{ opacity: donationImageIndex === idx ? 1 : 0 }}
-                            transition={{ duration: 0.8, ease: "easeInOut" }}
-                            className={idx === 0
-                              ? "relative"
-                              : "absolute inset-0 pointer-events-none"
-                            }
-                          >
-                            <Image
-                              src={img}
-                              alt={project.title}
-                              className={idx === 0
-                                ? "rounded-2xl shadow-2xl lg:h-full lg:w-auto lg:max-w-none"
-                                : "w-full h-full object-cover rounded-2xl shadow-2xl lg:h-full lg:w-auto lg:max-w-none"
-                              }
-                            />
-                          </motion.div>
-                        ))}
-                      </div>
-                    ) : (
-                      <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl" />
-                    )}
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl shadow-2xl"
+                    />
                   </div>
 
 
