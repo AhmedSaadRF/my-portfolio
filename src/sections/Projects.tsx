@@ -41,13 +41,13 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2026",
-    title: "Ofoq Library Website",
+    title: "Responsive Ofoq Library Website",
     results: [
       { title: "HTML" },
       { title: "CSS" },
       { title: "JavaScript" },
     ],
-    link: "https://donation-page2.vercel.app/",
+    link: "https://ahmed-alrefaey.vercel.app/",
     image: ofoqLibraryDark,
     images: [ofoqLibraryDark, ofoqLibraryLight],
   },
@@ -224,24 +224,29 @@ export const ProjectsSection = () => {
 
                   <div className="relative">
                     {project.images && project.images.length > 0 ? (
-
-                      <AnimatePresence mode="wait">
-                        <motion.div
-                          key={`${project.title}-${donationImageIndex}`}
-                          initial={{ opacity: 0, scale: 0.95 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          exit={{ opacity: 0, scale: 1.05 }}
-                          transition={{ duration: 0.8, ease: "easeInOut" }}
-                          className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                        >
-                          <Image
-                            src={project.images![donationImageIndex]}
-                            alt={project.title}
-                            className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:w-auto lg:max-w-none rounded-2xl shadow-2xl"
-                          />
-                        </motion.div>
-
-                      </AnimatePresence>
+                      <div className="relative mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none">
+                        {project.images.map((img, idx) => (
+                          <motion.div
+                            key={idx}
+                            initial={{ opacity: idx === 0 ? 1 : 0 }}
+                            animate={{ opacity: donationImageIndex === idx ? 1 : 0 }}
+                            transition={{ duration: 0.8, ease: "easeInOut" }}
+                            className={idx === 0
+                              ? "relative"
+                              : "absolute inset-0 pointer-events-none"
+                            }
+                          >
+                            <Image
+                              src={img}
+                              alt={project.title}
+                              className={idx === 0
+                                ? "rounded-2xl shadow-2xl lg:h-full lg:w-auto lg:max-w-none"
+                                : "w-full h-full object-cover rounded-2xl shadow-2xl lg:h-full lg:w-auto lg:max-w-none"
+                              }
+                            />
+                          </motion.div>
+                        ))}
+                      </div>
                     ) : (
                       <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl" />
                     )}
