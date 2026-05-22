@@ -18,6 +18,8 @@ import socialMediaProject from "@/assets/images/socialmedia.png";
 import adminDashboardPage from "@/assets/images/admin-dashboard.png";
 import DonationWebsite1Dark from "@/assets/images/donation-page1-dark.png";
 import DonationWebsite1Light from "@/assets/images/donation-page1-light.png";
+import ofoqLibraryLight from "@/assets/images/ofoq-library-light.png";
+import ofoqLibraryDark from "@/assets/images/ofoq-library-dark.png";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -25,7 +27,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const portfolioProjects = [
   {
     company: "RFRF Projects",
-    year: "2025",
+    year: "2026",
     title: "Responsive Donation Website 1",
     results: [
       { title: "HTML" },
@@ -38,7 +40,20 @@ const portfolioProjects = [
   },
   {
     company: "RFRF Projects",
-    year: "2025",
+    year: "2026",
+    title: "Ofoq Library Website",
+    results: [
+      { title: "HTML" },
+      { title: "CSS" },
+      { title: "JavaScript" },
+    ],
+    link: "https://donation-page2.vercel.app/",
+    image: ofoqLibraryDark,
+    images: [ofoqLibraryDark, ofoqLibraryLight],
+  },
+  {
+    company: "RFRF Projects",
+    year: "2026",
     title: "Admin Dashboard Website",
     results: [
       { title: "Vite js" },
