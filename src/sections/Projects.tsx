@@ -26,6 +26,31 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
+    title: "Responsive Donation Website 1",
+    results: [
+      { title: "HTML" },
+      { title: "CSS" },
+      { title: "JavaScript" },
+    ],
+    link: "https://donation-page1.vercel.app/",
+    image: DonationWebsite1Dark,
+    images: [DonationWebsite1Dark, DonationWebsite1Light],
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
+    title: "Admin Dashboard Website",
+    results: [
+      { title: "Vite js" },
+      { title: "aos Animation" },
+      { title: "Tailwind CSS" },
+    ],
+    link: "https://admin-dashboard-two-delta.vercel.app/",
+    image: adminDashboardPage,
+  },
+  {
+    company: "RFRF Projects",
+    year: "2025",
     title: "Dark Saas Blockchain Website",
     results: [
       { title: "Astro js" },
@@ -86,33 +111,6 @@ const portfolioProjects = [
   {
     company: "RFRF Projects",
     year: "2025",
-    title: "Admin Dashboard Website",
-    results: [
-      { title: "Vite js" },
-      { title: "aos Animation" },
-      { title: "Tailwind CSS" },
-    ],
-    link: "https://admin-dashboard-two-delta.vercel.app/",
-    image: adminDashboardPage,
-  },
-  {
-    company: "RFRF Projects",
-    year: "2025",
-    title: "Responsive Donation Website 1",
-    results: [
-      { title: "HTML" },
-      { title: "CSS" },
-      { title: "JavaScript" },
-    ],
-    link: "https://donation-page1.vercel.app/",
-    image: DonationWebsite1Dark,
-    images: [DonationWebsite1Dark, DonationWebsite1Light],
-  },
-
-
-  {
-    company: "RFRF Projects",
-    year: "2025",
     title: "Light Saas Landing Website",
     results: [
       { title: "Next js" },
@@ -151,7 +149,7 @@ const portfolioProjects = [
     year: "2025",
     title: "To-Do-App-List Project",
     results: [
-      { title: "React"},
+      { title: "React" },
       { title: "Java Script" },
       { title: "Local Storage" },
     ],
@@ -180,65 +178,65 @@ export const ProjectsSection = () => {
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
           {portfolioProjects.map((project, projectIndex) => (
 
-              <div key={project.title} className="sticky"  style={{ top: projectIndex <= 3 ? `calc(64px + ${projectIndex * 40}px)` : `calc(64px + ${3 * 40}px)` }}>
-                <Card className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20">
-                  <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+            <div key={project.title} className="sticky" style={{ top: projectIndex <= 3 ? `calc(64px + ${projectIndex * 40}px)` : `calc(64px + ${3 * 40}px)` }}>
+              <Card className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-16">
 
-                    <div className="lg:pb-16">
-                      <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-                        <span>{project.company}</span>
-                        <span>&bull;</span>
-                        <span>{project.year}</span>
-                      </div>
-                      <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
-                      <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                  <div className="lg:pb-16">
+                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                      <span>{project.company}</span>
+                      <span>&bull;</span>
+                      <span>{project.year}</span>
+                    </div>
+                    <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
+                    <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
 
-                      <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                        {project.results.map((result) => (
+                    <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                      {project.results.map((result) => (
                         <li key={result.title} className="flex gap-2 text-sm text-white/50 md:text-base">
-                          <CheckCircleIcon className="size-5 md:size-6"/>
+                          <CheckCircleIcon className="size-5 md:size-6" />
                           <span>{result.title}</span>
                         </li>
                       ))}</ul>
 
-                      <a href={project.link} target='_blank'>
-                        <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 md:w-auto ">
-                          <span>Visit Live Site</span>
-                          <ArrowUpRightIcon className="size-4" />
-                        </button>
-                      </a>
-                    </div>
-
-                    <div className="relative">
-                      {project.images && project.images.length > 0 ? (
-
-                        <AnimatePresence mode="wait">
-                          <motion.div
-                            key={`${project.title}-${donationImageIndex}`}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 1.05 }}
-                            transition={{ duration: 0.8, ease: "easeInOut" }}
-                            className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                          >
-                            <Image 
-                              src={project.images![donationImageIndex]} 
-                              alt={project.title} 
-                              className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:w-auto lg:max-w-none rounded-2xl shadow-2xl" 
-                            />
-                          </motion.div>
-
-                        </AnimatePresence>
-                      ) : (
-                        <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl" />
-                      )}
-                    </div>
-
-
+                    <a href={project.link} target='_blank'>
+                      <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 md:w-auto ">
+                        <span>Visit Live Site</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </button>
+                    </a>
                   </div>
 
-                </Card>
-              </div>
+                  <div className="relative">
+                    {project.images && project.images.length > 0 ? (
+
+                      <AnimatePresence mode="wait">
+                        <motion.div
+                          key={`${project.title}-${donationImageIndex}`}
+                          initial={{ opacity: 0, scale: 0.95 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0, scale: 1.05 }}
+                          transition={{ duration: 0.8, ease: "easeInOut" }}
+                          className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                        >
+                          <Image
+                            src={project.images![donationImageIndex]}
+                            alt={project.title}
+                            className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:w-auto lg:max-w-none rounded-2xl shadow-2xl"
+                          />
+                        </motion.div>
+
+                      </AnimatePresence>
+                    ) : (
+                      <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl" />
+                    )}
+                  </div>
+
+
+                </div>
+
+              </Card>
+            </div>
           ))}
 
         </div>
